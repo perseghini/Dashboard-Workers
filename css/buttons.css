@@ -1,0 +1,145 @@
+body { margin-top: 20px; background: #242527; }
+a { text-decoration: none; color: #EC5C93; }
+h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #666; color: rgba(255,255,255,0.3);
+}
+
+.btn {
+  position: relative;
+  padding: 1px 12px;
+  cursor: pointer;
+  width: 150px;
+  height: 80px;
+  line-height: 80px;
+  background: #888887;
+  margin: 44px auto;
+  text-align: center;
+  border-radius: 9px;
+  color: black;
+  /*text-shadow: -1px -1px 0px rgba(255,255,255,0.8), 1px 1px 2px rgba(0,0,0,1);*/
+  font-size: 1.5em;
+  font-family: sans-serif;
+  box-shadow: inset 1px 1px 2px rgba(255,255,255,0.3),
+              inset 3px 15px 45px rgba(255,255,255,0.1),
+              inset -1px -1px 2px rgba(0,0,0,0.5),
+              inset -3px -15px 45px rgba(0,0,0,0.2),
+              1px 5px 30px -4px black;
+  -webkit-transition: 0.1s ease-out;
+  -moz-transition:    0.1s ease-out;
+  -o-transition:      0.1s ease-out;
+  transition:         0.1s ease-out;
+}
+
+.quantitiveBtn{
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+  height: 80px;
+  line-height: 80px;
+  background: #888887;
+  margin: 44px auto;
+  text-align: center;
+  border-radius: 9px;
+  color: red;
+  /*text-shadow: -1px -1px 0px rgba(255,255,255,0.8), 1px 1px 2px rgba(0,0,0,1);*/
+  font-size: 1.5em;
+  font-family: sans-serif;
+  box-shadow: inset 1px 1px 2px rgba(255,255,255,0.3),
+              inset 3px 15px 45px rgba(255,255,255,0.1),
+              inset -1px -1px 2px rgba(0,0,0,0.5),
+              inset -3px -15px 45px rgba(0,0,0,0.2),
+              1px 5px 30px -4px red;
+  -webkit-transition: 0.1s ease-out;
+  -moz-transition:    0.1s ease-out;
+  -o-transition:      0.1s ease-out;
+  transition:         0.1s ease-out;
+}
+
+.btn:before {
+  content: "";
+  background: #1A1A1A;
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  z-index: -1;
+  border-radius: 9px;
+  /*box-shadow: inset -1px -1px 2px rgba(255,255,255,0.3),
+    inset -5px -15px 40px rgba(255,255,255,0.1),
+    inset 1px 1px 2px rgba(0,0,0,0.5),
+    inset 5px 15px 40px rgba(0,0,0,0.2),
+    -2px -40px 50px -20px rgba(255,255,255,0.1),
+    2px 35px 50px -10px rgba(0,0,0,0.4),
+    0px 0px 25px 8px rgba(60,60,60,1);*/
+}
+
+.btn:active {
+  color: #63de00;
+  /*text-shadow: 1px 1px 0px rgba(255,255,255,0.15);*/
+  box-shadow: inset 1px 1px 2px rgba(255,255,255,0.3),
+              inset 3px 15px 45px rgba(0,0,0,0.2),
+              inset -1px -1px 2px rgba(0,0,0,0.5),
+              inset -3px -15px 45px rgba(255,255,255,0.1),
+              1px 5px 10px -4px #63de00;
+}
+
+.blob, .blob:before {
+  -webkit-animation: blob 1s linear;
+  -moz-animation:    blob 1s linear;
+  -o-animation:      blob 1s linear;
+  animation:         blob 1s linear;
+}
+
+.blob {
+  color: rgba(99, 222, 0, 100);
+  /*text-shadow: 1px 1px 0px rgba(255,255,255,0.15);*/
+  box-shadow: inset 1px 1px 2px rgba(255,255,255,0.3),
+              inset 3px 15px 45px rgba(0,0,0,0.2),
+              inset -1px -1px 2px rgba(0,0,0,0.5),
+              inset -3px -15px 45px rgba(255,255,255,0.1),
+              1px 5px 10px -4px #63de00;
+}
+
+/*@-webkit-keyframes blob {
+  0%   { border-radius: 999px 999px; }
+  5%   { border-radius: 999px 200px; }
+  22%  { border-radius: 400px 999px; }
+  34%  { border-radius: 999px 700px; }
+  48%  { border-radius: 700px 999px; }
+  70%  { border-radius: 999px 999px; }
+  85%  { border-radius: 850px 999px; }
+  100% { border-radius: 999px 999px; }
+}
+@-moz-keyframes    blob {
+  0%   { border-radius: 999px 999px; }
+  5%   { border-radius: 999px 200px; }
+  22%  { border-radius: 400px 999px; }
+  34%  { border-radius: 999px 700px; }
+  48%  { border-radius: 700px 999px; }
+  70%  { border-radius: 999px 999px; }
+  85%  { border-radius: 850px 999px; }
+  100% { border-radius: 999px 999px; }
+}
+@-o-keyframes      blob {
+  0%   { border-radius: 999px 999px; }
+  5%   { border-radius: 999px 200px; }
+  22%  { border-radius: 400px 999px; }
+  34%  { border-radius: 999px 700px; }
+  48%  { border-radius: 700px 999px; }
+  70%  { border-radius: 999px 999px; }
+  85%  { border-radius: 850px 999px; }
+  100% { border-radius: 999px 999px; }
+}
+@keyframes         blob {
+  0%   { border-radius: 999px 999px; }
+  5%   { border-radius: 999px 200px; }
+  22%  { border-radius: 400px 999px; }
+  34%  { border-radius: 999px 700px; }
+  48%  { border-radius: 700px 999px; }
+  70%  { border-radius: 999px 999px; }
+  85%  { border-radius: 850px 999px; }
+  100% { border-radius: 999px 999px; }
+}*/
